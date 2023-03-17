@@ -5,6 +5,9 @@ import styles from '@/styles/Home.module.css'
 import Header from './components/header'
 import Hero from './components/hero'
 import About from './components/About'
+import Experience from './components/Experience'
+import Skills from './components/Skills'
+
 
 
 export default function Home() {
@@ -17,12 +20,20 @@ export default function Home() {
       <Header />
 
 
-      <section id="hero" className='snap-center'>
+      <section id="hero" className='snap-start'>
       <Hero />
       </section>
 
-      <section id='about'>
+      <section id='about' className='snap-center'>
         <About />
+      </section>
+
+      <section id="experience"  className='snap-center'>
+        <Experience />
+      </section>
+
+      <section id="skills" className='snap-start'>
+        <Skills />
       </section>
 
     </div>

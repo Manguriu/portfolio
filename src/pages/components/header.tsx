@@ -24,10 +24,9 @@ function header({}: Props) {
         }}
         className='flex flex-row items-center'>
             {/*social icons */}
-            <SocialIcon url="https://www.linkedin.com/in/brian-manguriu-3b0b07207/"  fgColor='indigo' bgColor='transparent'/>
-            <SocialIcon network="twitter" fgColor='blue' bgColor='transparent'/>
-            <SocialIcon network="whatsapp" fgColor='green' bgColor='transparent' />
-            <SocialIcon network="github" fgColor='black' bgColor='transparent' />
+            <SocialIcon url="https://www.linkedin.com/in/brian-manguriu-3b0b07207/"  fgColor='green' bgColor='transparent'/>
+            <SocialIcon url="https://twitter.com/Mainnet14" fgColor='blue' bgColor='transparent'/>
+            <SocialIcon url="https://github.com/Manguriu" fgColor='black' bgColor='transparent' />
         </motion.div>
         <motion.div
           initial={{
@@ -45,7 +44,7 @@ function header({}: Props) {
           }}
         className='flex flex-row items-center text-grey-300 cursor-pointer'>
             <SocialIcon className='cursor-pointer' network='email' fgColor='red' bgColor='transparent'/>
-            <p className='uppercase hidden md:inline-flex text-sm text-black-400'>contact me</p>
+            <p className='underline uppercase hidden md:inline-flex text-sm text-black-400'>contact me</p>
         </motion.div>
     </header>
   )
