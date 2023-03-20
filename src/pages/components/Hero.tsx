@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import React from 'react'
-
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import PopupCircles from './PopupCircles';
 
 
 type Props = {}
 
-function hero({}: Props) {
+function Hero({}: Props) {
     const [text, helper] = useTypewriter({
         words:[
             "Manguriu Is The Name",
@@ -20,7 +19,7 @@ function hero({}: Props) {
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <PopupCircles />
-        <img className="relative rounded-full mx-auto object-cover" src='pic.png' />
+        <img className="relative rounded-full mx-auto object-cover" src='pic.png' alt='' />
 
 
     <div className='z-20'>
@@ -48,4 +47,4 @@ function hero({}: Props) {
   )
 }
 
-export default hero
+export default Hero

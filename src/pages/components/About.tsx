@@ -22,7 +22,7 @@ export default function About({}: Props) {
               opacity:1,
             }}
             
-            src='hello.png' height={64} width={95}
+            src='hello.png' alt='' height={64} width={95}
             className="-mb-10 md:mb-0 flex-shrink-0  rounded-full md:rounded-lg object-cover xl:w-[200px] xl:h-[250px]"
            />
            <div className='space-y-0 px-0 md:px-10'>

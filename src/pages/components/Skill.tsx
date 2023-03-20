@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from "framer-motion"
 
+
 type Props = {
     directionLeft?:boolean;
 }
@@ -8,7 +9,7 @@ type Props = {
 function Skill({directionLeft}: Props) {
   return (
     <div className='group relative flex cursor-pointer'>
-    <motion.img  
+    <motion.img 
         initial={{
             x: directionLeft ? -200 : 200,
             opacity:0
@@ -17,7 +18,7 @@ function Skill({directionLeft}: Props) {
         transition={{ duration:1}}
         whileInView={{opacity:1, x:0}}
     
-     src="download.png" />
+     src="download.png" alt='' />
     </div>
   )
 }
