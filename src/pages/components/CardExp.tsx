@@ -5,7 +5,7 @@ type Props = {};
 
 export default function CardExp({}: Props) {
   return (
-    <article className='flex flex-col rounded-l items-center space-y-4 flex-shrink-0 w-[200px] md:w-[300px] snap-center bg-[#292929] p-2 hover:opacity-100 opacity-50 cursor-pointer overflow-hidden transition-opacity duration-3000'>
+    <article className='flex flex-col rounded-l items-center space-y-4 flex-shrink-0 w-[500px] md:w-[400px] h-[400px] md:h-[450px] snap-center bg-[#292929] p-2 hover:opacity-100 opacity-50 cursor-pointer overflow-hidden transition-opacity duration-3000'>
       <motion.img
         initial={{
           y: -100,
