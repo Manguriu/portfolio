@@ -33,7 +33,7 @@ export default function About({}: Props) {
             </p>
             
            </div>
-    
+          <div className='w-full absolute top-[30%] bg-[#430f58]/20 left-0 h-[500px] -skew-y-12' />
         </div>
   )
 }
