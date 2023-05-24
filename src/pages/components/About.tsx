@@ -29,7 +29,11 @@ export default function About({}: Props) {
             <h4 className='text-4xl font-semibold'> About{" "} 
             <span className='underline'> Manguriu</span></h4>{" "}
             <p className='text-base'>
-            A proficient software developer with substantial experience in coding, testing, and maintaining software systems. Possessing a versatile and promising skill set, as well as proficiency in a variety of programming languages. Exhibiting a high level of expertise in modern development tools and platforms. Capable of managing independent projects with ease, while also being a collaborative team player.
+            As an experienced software developer, I have a strong background in coding, testing, and maintaining software systems. Throughout my career, I have developed a versatile skill set that allows me to excel in multiple programming languages. Specifically, I specialize in React, Next.js, Laravel, and JavaScript, which I have mastered to create efficient and scalable applications.
+
+With my expertise in React and Next.js, I can effortlessly build dynamic and interactive user interfaces. These frameworks provide a solid foundation for delivering exceptional user experiences while ensuring optimal performance. Additionally, my proficiency in Laravel, a powerful PHP framework, enables me to develop robust and secure back-end systems.
+
+https://github.com/Manguriu
             </p>
             
            </div>
