@@ -11,7 +11,7 @@ import Contacts from './components/Contacts'
 
 export default function Home() {
   return (
-    <div className='bg-[rgb(70,62,71)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='  h-screen snap-y snap-mandatory overflow-scroll z-0'>
 
       <Head>
         <title>Brian protfolio</title>
