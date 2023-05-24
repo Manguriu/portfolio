@@ -47,6 +47,7 @@ function Hero({}: Props) {
         </div>
         <header className="text-center text-white py-1 bg-green-500 font-semibold"><Progress /></header>
     </div>
+                <div className='w-full absolute top-[30%] bg-[#430f58]/20 left-0 h-[500px] -skew-y-12' />
   )
 }
 
