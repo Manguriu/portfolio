@@ -2,6 +2,8 @@ import Link from 'next/link';
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import PopupCircles from './PopupCircles';
+import Progress from './Progress';
+
 
 
 type Props = {}
@@ -43,6 +45,7 @@ function Hero({}: Props) {
           </Link>
         </div>
         </div>
+        <header className="text-center text-white py-1 bg-green-500 font-semibold"><Progress /></header>
     </div>
   )
 }
