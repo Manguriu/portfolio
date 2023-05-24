@@ -20,14 +20,14 @@ function Projects({}: Props) {
          <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl'>Projects</h3>
         <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
             {projects.map((project, i) =>(
-                <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-40 h-screen'>
+                <div key={project.id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-40 h-screen'>
                     <motion.img
                         initial={{y: -300, opacity:0,}}
                         transition={{duration:1.2}}
                         whileInView={{opacity:1,y:0}}
                         viewport={{once:true}}
                     src="https://media.istockphoto.com/id/1299026534/photo/nairobi-kenya.jpg?s=612x612&w=0&k=20&c=xwCQ441cTHFBTZpb8ihvVwqqtTZjmees1C3xdJc_nfw=" />
-                    <div key={project.id}><h4 className='text-4xl font-semibold text-center '><span className='underline decoration-[red]/50'>Case study { i + 1} of {projectsCount}</span></h4>
+                    <div><h4 className='text-4xl font-semibold text-center '><span className='underline decoration-[red]/50'>Case study { i + 1} of {projectsCount}</span></h4>
                     <p className='text-lg text-center md:text-left'>The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.</p>
                     </div>
                 </div>
