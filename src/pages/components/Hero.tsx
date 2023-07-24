@@ -1,17 +1,28 @@
-import Link from 'next/link';
-import React from 'react';
-import { Cursor, useTypewriter } from 'react-simple-typewriter';
-import PopupCircles from './PopupCircles';
-import Progress from './Progress';
+import React from "react";
+import Link from "next/link";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+import PopupCircles from "./PopupCircles";
+("use client");
 
 type Props = {};
 
 function Hero({}: Props) {
+  const smoothScrollTo = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
   const [text, helper] = useTypewriter({
     words: [
-      "Manguriu Is The Name",
-      "I Like Programming <Npm install code loving!>",
-      "Coffee is my thing < git init love it />",
+      "My Name is Brian Manguriu",
+      "A Programmer",
+      "Languages | React | NextJs | Laravel | JavaScript ",
     ],
     loop: true,
     delaySpeed: 1000,
@@ -19,32 +30,71 @@ function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <PopupCircles />
-      <img className="relative rounded-full mx-auto object-cover" src="pic.png" alt="" />
+      <p className="text-2xl  uppercase text-black"> Hello there,</p>
+      <img
+        className="relative rounded-full mx-auto object-cover"
+        src="pic.png"
+        alt=""
+      />
 
       <div className="z-20">
-        <h2 className="text-sm uppercase text-red-300 pb-2 tracking-[15px]">Software developer</h2>
+        <h2 className="text-sm uppercas pb-2 tracking-[15px]">
+          Software developer
+        </h2>
         <h1>
-          <span className="text-red-300 text-2xl lg:text-4xl font-semibold px-5">{text}</span>
-          <Cursor cursorColor="red" />
+          <span className=" text-2xl lg:text-4xl font-semibold px-5">
+            {text}
+          </span>
+          <Cursor cursorColor="green" />
         </h1>
-        <div className="text-red-300 pt-7">
-          <Link href="#about">
-            <button className="px-6 py-2 border border-[rgb(70,62,71)] rounded-full uppercase text-xm tracking-widest transition-all hover:border-[white] hover:text-[white]">About</button>
-          </Link>
-          <Link href="#experience">
-            <button className="px-6 py-2 border border-[rgb(70,62,71)] rounded-full uppercase text-xm tracking-widest transition-all hover:border-[blue] hover:text-[blue]">Experience</button>
-          </Link>
-          <Link href="#skills">
-            <button className="px-6 py-2 border border-[rgb(70,62,71)] rounded-full uppercase text-xm tracking-widest transition-all hover:border-[red] hover:text-[red]">Skills</button>
-          </Link>
-          <Link href="#projects">
-            <button className="px-6 py-2 border border-[rgb(70,62,71)] rounded-full uppercase text-xm tracking-widest transition-all hover:border-[#f700ff] hover:text-[#f700ff]">Projects</button>
-          </Link>
-        </div>
+
+        <button
+          onClick={() => smoothScrollTo("about")}
+          className="px-6 py-2 border border-[rgb(70,62,71)] rounded-full uppercase text-xm tracking-widest transition-all hover:border-[#6C00FF] hover:text-[#6C00FF]">
+          About
+        </button>
+
+        <button
+          onClick={() => smoothScrollTo("experience")}
+          className="px-6 py-2 border border-[rgb(70,62,71)] rounded-full uppercase text-xm tracking-widest transition-all hover:border-[blue] hover:text-[blue]">
+          Experience
+        </button>
+
+        <button
+          onClick={() => smoothScrollTo("projects")}
+          className="px-6 py-2 border border-[rgb(70,62,71)] rounded-full uppercase text-xm tracking-widest transition-all hover:border-[#f700ff] hover:text-[#f700ff]">
+          Projects
+        </button>
+
+        <button
+          onClick={() => smoothScrollTo("contacts")}
+          className="px-6 py-2 border border-[rgb(70,62,71)] rounded-full uppercase text-xm tracking-widest transition-all hover:border-[red] hover:text-[red]">
+          Contacts
+        </button>
       </div>
-      <header className="text-center text-white py-1 bg-green-500 font-semibold">
-        <Progress />
-      </header>
+      <div className="text-center text-white py-1 mt-10 font-semibold">
+        <a
+          href="https://drive.google.com/file/d/11TuqYkJHmzkwOhPIvYI97LwRtD8dwnnM/view?usp=drive_link"
+          media="print and (resolution:300dpi)"
+          target="_blank"
+          role="none">
+          <button className="button" type="button">
+            <span className="button__text">Resume</span>
+            <span className="button__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 35 35"
+                id="bdd05811-e15d-428c-bb53-8661459f9307"
+                data-name="Layer 2"
+                className="svg">
+                <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+              </svg>
+            </span>
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
