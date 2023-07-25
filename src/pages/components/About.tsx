@@ -32,9 +32,6 @@ export default function About({}: Props) {
         />
 
         <div className="space-y-4 px-0 md:px-10 mt-4 md:mt-0">
-          <h4 className="text-2xl md:text-4xl font-semibold mb-3">
-            <span className="underline"> Manguriu</span>
-          </h4>
           <p className="text-base md:text-lg mt-2 about-morph subtitle-p">
             As an experienced software developer, I have a strong background in
             coding, testing, and maintaining software systems. Throughout my
